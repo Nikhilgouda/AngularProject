@@ -1,0 +1,26 @@
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"  (click)="updatelnk('hobby')">Hobby</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" (click)="updatelnk('addhobby')">Add Hobby</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" (click)="updatelnk('fav')">My favourites</a>
+  </li>
+  
+ 
+
+
+<app-home 
+[msg]="lnk" 
+[hobbylist]="hobbies" 
+(newhobby)="addHobby($event)" 
+(remhobby)="delhobby($event)"
+(addfav)="addtofav($event)"
+[myfav]="hobbies"
+(rmvfav)="removefav($event)"
+
+></app-home>

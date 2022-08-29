@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let x of myhobby; let i= index">
+       <p> Hobbies:{{x.name | mypipe}} </p>
+       <p> Description:{{x.des | mypipe}}</p>
+        <button class="btn btn-primary" (click)="delhobby(i)">Delete</button>
+        <button class="btn btn-info" (click)="afav(i)">Add to favourites</button>
+    </li>
+   
+</ul>
